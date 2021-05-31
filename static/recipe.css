@@ -93,7 +93,7 @@
     width: 70%;
     height: 70%;
     overflow-y: scroll;
-    /* display: none ;  */
+    display: none ;  
     padding: 2rem 0;
   }
   .meal_details::-webkit-scrollbar{

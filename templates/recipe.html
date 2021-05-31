@@ -7,6 +7,7 @@
     <title>Recipes</title>
     <link rel="stylesheet" href="/static/recipe.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    
      
 </head>
 <body>
@@ -25,16 +26,16 @@
             <h4><b>{{items[0]}}</b></h4>
             <!-- <p>Architect & Engineer</p> -->
             
-            <a href="#" class="recipe_btn">
+            <a href="#" class="recipe_btn" onclick="openForm()">
                 <!-- <button>
                 Get Recipe
             </button> -->
             Get Recipe
 
-            </a> 
+        </a> 
             </div>
-            <div class = "meal_details" id="meal_detaailspopup">
-                <button type="button" class = "btn recipe_close_btn" id="recipe_close_btn" >
+            <div class = "meal_details" id="meal_detailspopup">
+                <button type="button" class = "btn recipe_close_btn" id="recipe_close_btn" onclick="closeForm()" >
                     <i class="fas fa-times"></i>
                 </button>
                 
@@ -84,6 +85,6 @@
  {% endfor %}
 
 
-    
+ <script src="/static/script.js"></script>
 </body>
 </html>

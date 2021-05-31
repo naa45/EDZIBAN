@@ -85,5 +85,15 @@ function SendData(){
         console.error('Error:', error);
       });
 
+
+}
+function openForm(){
+  document.getElementById("meal_detailspopup").style.display="block";
+  op.classList.add("active");
+}
+
+function closeForm(){
+  var op = document.getElementById("meal_detailspopup").style.display="none";
+  op.classList.remove("active");
 }
 

@@ -14,9 +14,7 @@ def run_ingredients():
         #print(MainData)
         #newdata=str(MainData)
         # res = newdata.strip('][').split(', ')
-        print("-------------")
         print(MainData)
-        print("----------")
         print("worked")
         return redirect(f'/showrecipe/{MainData}')
     return render_template('add_ingredients.html')
@@ -27,8 +25,8 @@ def main_run():
 
 @app.route('/showrecipe/<data>')
 def show_recipe(data):
-    print(type(data))
     data=ast.literal_eval(data)
+
     print(data)
     #MainData = data.strip('[]').split(',')
     #print(MainData)
