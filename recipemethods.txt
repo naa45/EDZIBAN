@@ -1,0 +1,5 @@
+Rice Chicken Stew,add water,add milk,add sugar
+Light Soup With Goat,add water,add milk,add sugar
+Light Soup With Fish,add water,add milk,add sugar
+Garden Egg Stew,add water,add milk,add sugar
+Grilled Cheese,add water,add milk,add sugar

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="/static/recipe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     
+</head>
+<body>
+     <center>
+        <h1>
+            Get Your Recipes!!
+        </h1>
+
+     </center>
+    
+    <div class="row">
+        {% for items in data %}
+        <div class="card">
+            <img class='cardimage' src="{{url_for('static',filename='images/GrilledCheese.jpeg')}}" >
+            <div class="container">
+            <h4><b>{{items[0]}}</b></h4>
+            <!-- <p>Architect & Engineer</p> -->
+            
+            <a href="#" class="recipe_btn">
+                <!-- <button>
+                Get Recipe
+            </button> -->
+            Get Recipe
+
+            </a> 
+            </div>
+            <div class = "meal_details" id="meal_detaailspopup">
+                <button type="button" class = "btn recipe_close_btn" id="recipe_close_btn" >
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <div class="meal_details_content">
+
+                    {% set list1 = items[0].split(":")[1].strip() %}
+                    <h2 class="recipe_title">{{list1}}</h2>
+                
+                    <div class="recipe-_instruct">
+                        <center> <h3>Instructions:</h3></center>
+                    
+                        <p><ol>
+                            {% for i in range((items|length)-1)%}
+                            <li>{{items[i+1]}}</li>
+                            <!-- <li>{{items[2]}}</li>
+                            <li>{{items[3]}}</li> -->
+                            {% endfor %}
+                        </ol>
+                    </p>
+                    
+                    </div>
+                    <div class="recipe_meal_img">
+                        <img src="{{ url_for('static', filename='images/GrilledCheese.jpeg')}}">
+                    </div>
+                    <div class="recipe_link">
+                        <center>
+                            <a href="#" target="_blank">WATCH VIDEO</a>
+
+                        </center>
+                        
+        
+                    </div>
+        
+                
+
+
+            </div>
+            
+        </div>
+    </div>
+    <!-- <h1></h1> -->
+    <!-- <ol>
+        <li>{{items[1]}}</li>
+        <li>{{items[2]}}</li>
+        <li>{{items[3]}}</li>
+    </ol> -->
+ {% endfor %}
+
+
+    
+</body>
+</html>

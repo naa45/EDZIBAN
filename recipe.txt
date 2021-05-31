@@ -1,0 +1,5 @@
+Grilled Cheese,butter,bread,cheese
+Rice Chicken Stew,tomatoes,onions,garlic,chicken,pepper,curry,whitepepper
+Garden Egg Stew,gardeneggs,tomatoes,onions,palmmoil
+Light Soup With Goat,tomatoes,onions,garlic,goat,pepper
+Light Soup With Fish,tomatoes,onions,garlic,fish,pepper
